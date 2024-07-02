@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" size="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>UI Mentor | Contact Form</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <article class="contenedor">
+    <h1>Contact Us</h1>
+
+    <form action="" class="form" method="post">
+
+      <div class="campo dos">
+        <label for="nombre" class="lab">First Name <span>*</span>
+          <input type="text" id="usuario" tabindex="1" name="nombre" required></label>
+        <div class="error error2"><small>This field is required</small></div>
+        <label for="apellido" class="lab">Last Name <span>*</span>
+          <input type="text" id="apellido" tabindex="2" name="apellido" required></label>
+        <div class="error error1"><small>This field is required</small></div>
+      </div>
+
+
+
+
+      <div class="campo">
+        <label for="email">Email Address<span>*</span>
+          <input type="email" id="email" tabindex="3"  name="nombre" required></label>
+      </div>
+      <div class="error error3"><small>Please enter a valid email address</small></div>
+
+      <div class="campo">
+        <label for="tipo_consulta">Query Type<span>*</span></label>
+        <div class="tipos-consulta">
+          <div class="cont-label">
+            <input type="radio" id="consulta_general" tabindex="4" name="radio" value="consulta_general">
+            <label for="consulta_general" class="radio">
+              General Enquiry
+            </label>
+          </div>
+          <div class="cont-label">
+            <input type="radio" id="solicitud_soporte" tabindex="5" name="radio" value="solicitud_soporte">
+            <label for="solicitud_soporte" class="radio">
+              Support Request
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="error error4"><small>Please select a query type</small></div>
+
+      <div class="campo message">
+        <label for="mensaje">Message <span>*</span></label><br>
+        <textarea id="mensaje" tabindex="6" name="mensaje" required></textarea>
+      </div>
+      <div class="error error5"><small>This field is required</small></div>
+
+      <div class="campo tres">
+        <label for="consentimiento">
+          <input type="checkbox" tabindex="7" id="consentimiento" name="consentimiento" required>
+          I consent to being contacted by the team <span>*</span></label>
+      </div>
+      <div class="error error6"><small>To submit this form, please consent to being contacted</small></div>
+      <button type="submit" id="btn-enviar" tabindex="8" class="submit">Submit</button>
+    </form>
+
+    <div class="estado-exito">
+      <div class="containesr-log">
+        <img src="assets/images/icon-success-check.svg" alt="iconSuccess">
+        <h2>Message Sent!</h2>
+      </div>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+
+  </article>
+ 
+  <!-- 
+    <div class="attribution">
+        Frontend Mentor Challenge.
+        Coded by <a href="#">Your Name Here</a>. -->
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
