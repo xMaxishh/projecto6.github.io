@@ -59,7 +59,7 @@ body {
 
 .contenedor {
     width: 620px;
-    height: 600px;
+    height: 615px;
     background: var(--blanco);
     margin: 0 auto;
     margin-top: calc(50dvh - 310px);
